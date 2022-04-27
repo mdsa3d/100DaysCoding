@@ -1,3 +1,3 @@
-# 100DaysCoding
+# Learn Machine Learning 
 
-The goal of this repository is to challenge myself to perform coding for 1 hour everyday. 
+This repository tracks the journey and tools in learning various machine learning techniques.
