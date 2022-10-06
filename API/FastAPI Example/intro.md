@@ -38,7 +38,15 @@ Build a machine learning API using Python, FastAPI and Scikit-Learn AND DEPLOY i
 4. Create requirements txt `pip3 freeze > requirements.txt`.
 5. Create a sample app
 6. To launch the app, go to terminal and type `uvicorn mlapi:app --reload`
-7. Test the app usign Postman, untill satisfied
+7. Test the app using Postman, teh below file can be used as body of the request.
+```json
+{
+    "YearsAtCompany":1, // Float values
+    "EmployeeSatisfaction": 0.01, // Float Vlaue
+    "Position": "Non-Manager", // Manager or Non-Manager
+    "Salary" : 4 // Ordinal 1,2,3,4,5
+}
+```
 8. Bring in machine learning model
 
 Deploying on Heroku
@@ -65,5 +73,8 @@ sample.json
     - create api : `heroku create`
     - push the changes : `git push heroku master` , this will upload the files and build the source.
     - You will get the heroku api address, which you can use to connect to the API
+    - open teh app using : `heroku open`
+    - One can check heroku logs : `heroku logs --tail`
+
 
 
